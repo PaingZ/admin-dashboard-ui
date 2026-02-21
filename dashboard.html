@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Dashboard</title>
+    <title>ElaAdmin - Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,28 +11,41 @@
     <div class="dashboard-container">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <i class="fas fa-th-large"></i>
-                <h3>Admin Panel</h3>
+                <i class="fas fa-cube"></i>
+                <h3>ElaAdmin</h3>
+                <i class="fas fa-bars toggle-sidebar"></i>
             </div>
             <nav class="sidebar-nav">
                 <ul>
                     <li class="active">
-                        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li class="menu-title">UI ELEMENTS</li>
+                    <li>
+                        <a href="#"><i class="fas fa-box"></i> Components <i class="fas fa-angle-right dropdown-icon"></i></a>
                     </li>
                     <li>
-                        <a href="users.html"><i class="fas fa-users"></i> Users</a>
+                        <a href="#"><i class="fas fa-table"></i> Tables <i class="fas fa-angle-right dropdown-icon"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-clipboard-list"></i> Tests</a>
+                        <a href="#"><i class="fas fa-edit"></i> Forms <i class="fas fa-angle-right dropdown-icon"></i></a>
+                    </li>
+                    <li class="menu-title">ICONS & CHARTS</li>
+                    <li>
+                        <a href="#"><i class="fas fa-star"></i> Icons <i class="fas fa-angle-right dropdown-icon"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-credit-card"></i> Payments</a>
+                        <a href="#"><i class="fas fa-chart-bar"></i> Widgets</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-shopping-cart"></i> Test-Purchases</a>
+                        <a href="#"><i class="fas fa-chart-pie"></i> Charts <i class="fas fa-angle-right dropdown-icon"></i></a>
                     </li>
                     <li>
-                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-map"></i> Maps <i class="fas fa-angle-right dropdown-icon"></i></a>
+                    </li>
+                    <li class="menu-title">EXTRAS</li>
+                    <li>
+                        <a href="#"><i class="fas fa-file"></i> Pages <i class="fas fa-angle-right dropdown-icon"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -41,79 +54,111 @@
         <main class="main-content">
             <header class="navbar">
                 <div class="navbar-left">
-                    <i class="fas fa-bars toggle-sidebar"></i>
-                    <div class="breadcrumb">Dashboard</div>
+                    <!-- Placeholder for menu toggle or logo -->
+                    <h3 class="navbar-logo">ElaAdmin</h3>
                 </div>
                 <div class="navbar-right">
-                    <span class="admin-name">Admin</span>
-                    <i class="fas fa-user-circle admin-icon"></i>
+                    <input type="text" placeholder="Type to search">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-envelope"></i>
+                    <img src="https://via.placeholder.com/30" alt="User Avatar" class="user-avatar">
                 </div>
             </header>
 
             <div class="content-area">
-                <div class="dashboard-grid">
-                    <div class="card summary-card">
+                <div class="dashboard-summary-grid">
+                    <div class="summary-card green">
                         <div class="card-body">
-                            <div class="summary-icon"><i class="fas fa-users"></i></div>
-                            <div class="summary-info">
-                                <h3>Total Users</h3>
-                                <p>1,234</p>
+                            <div class="summary-text">
+                                <h2>$23,569.00</h2>
+                                <p>REVENUE <i class="fas fa-arrow-up"></i> 12.5%</p>
                             </div>
+                            <div class="summary-icon-large"><i class="fas fa-dollar-sign"></i></div>
                         </div>
                     </div>
-                    <div class="card summary-card">
+                    <div class="summary-card purple">
                         <div class="card-body">
-                            <div class="summary-icon"><i class="fas fa-clipboard-list"></i></div>
-                            <div class="summary-info">
-                                <h3>Total Tests</h3>
-                                <p>567</p>
+                            <div class="summary-text">
+                                <h2>3,435</h2>
+                                <p>SALES <i class="fas fa-arrow-up"></i> 8.2%</p>
                             </div>
+                            <div class="summary-icon-large"><i class="fas fa-shopping-cart"></i></div>
                         </div>
                     </div>
-                    <div class="card summary-card">
+                    <div class="summary-card blue">
                         <div class="card-body">
-                            <div class="summary-icon"><i class="fas fa-dollar-sign"></i></div>
-                            <div class="summary-info">
-                                <h3>Total Revenue</h3>
-                                <p>$12,345</p>
+                            <div class="summary-text">
+                                <h2>1,245</h2>
+                                <p>CUSTOMERS <i class="fas fa-arrow-up"></i> 5.7%</p>
                             </div>
+                            <div class="summary-icon-large"><i class="fas fa-users"></i></div>
                         </div>
                     </div>
-                    <div class="card summary-card">
+                    <div class="summary-card orange">
                         <div class="card-body">
-                            <div class="summary-icon"><i class="fas fa-shopping-cart"></i></div>
-                            <div class="summary-info">
-                                <h3>Total Sales</h3>
-                                <p>890</p>
+                            <div class="summary-text">
+                                <h2>47.0%</h2>
+                                <p>BOUNCE RATE <i class="fas fa-arrow-down"></i> 2.1%</p>
                             </div>
+                            <div class="summary-icon-large"><i class="fas fa-chart-line"></i></div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card full-width-card">
+                <div class="dashboard-cards-grid">
+                    <div class="card large-card">
                         <div class="card-header">
                             <h2>Sales Overview</h2>
+                            <i class="fas fa-ellipsis-h"></i>
                         </div>
                         <div class="card-body">
-                            <!-- Placeholder for a chart -->
                             <div class="chart-placeholder">Chart will go here</div>
+                        </div>
+                    </div>
+                    <div class="card large-card">
+                        <div class="card-header">
+                            <h2>Traffic Sources</h2>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-placeholder">Donut Chart will go here</div>
                         </div>
                     </div>
 
                     <div class="card half-width-card">
                         <div class="card-header">
-                            <h2>Recent Activities</h2>
+                            <h2>Recent Activity</h2>
                         </div>
                         <div class="card-body">
                             <ul class="activity-list">
-                                <li>User 'John Doe' registered. <span>10 mins ago</span></li>
-                                <li>New test 'Math Quiz' added. <span>30 mins ago</span></li>
-                                <li>Payment received from 'Jane Smith'. <span>1 hour ago</span></li>
-                                <li>User 'John Doe' registered. <span>10 mins ago</span></li>
-                                <li>New test 'Math Quiz' added. <span>30 mins ago</span></li>
-                                <li>Payment received from 'Jane Smith'. <span>1 hour ago</span></li>
-                                <li>User 'John Doe' registered. <span>10 mins ago</span></li>
-                                <li>New test 'Math Quiz' added. <span>30 mins ago</span></li>
-                                <li>Payment received from 'Jane Smith'. <span>1 hour ago</span></li>
+                                <li>
+                                    <div class="activity-icon new-order"><i class="fas fa-shopping-basket"></i></div>
+                                    <div class="activity-info">
+                                        <p>New order received</p>
+                                        <span>Order #12345 from John Doe <i>2 minutes ago</i></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon new-customer"><i class="fas fa-user-plus"></i></div>
+                                    <div class="activity-info">
+                                        <p>New customer registered</p>
+                                        <span>Jane Smith joined the platform <i>15 minutes ago</i></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon low-stock"><i class="fas fa-exclamation-triangle"></i></div>
+                                    <div class="activity-info">
+                                        <p>Low stock alert</p>
+                                        <span>Product SKU #789 is running low <i>1 hour ago</i></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon new-review"><i class="fas fa-star"></i></div>
+                                    <div class="activity-info">
+                                        <p>New review posted</p>
+                                        <span>Product X received a 5-star review <i>2 hours ago</i></span>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -123,13 +168,42 @@
                             <h2>Top Products</h2>
                         </div>
                         <div class="card-body">
-                            <ul class="top-products-list">
-                                <li>Test A - 150 sales</li>
-                                <li>Test B - 120 sales</li>
-                                <li>Test C - 90 sales</li>
-                                <li>Test D - 75 sales</li>
-                                <li>Test E - 60 sales</li>
-                            </ul>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>PRODUCT</th>
+                                        <th>SALES</th>
+                                        <th>REVENUE</th>
+                                        <th>STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="product-color-box purple"></span> Premium Widget</td>
+                                        <td>245</td>
+                                        <td>$12,250</td>
+                                        <td><span class="status-badge in-stock">In Stock</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="product-color-box pink"></span> Standard Package</td>
+                                        <td>189</td>
+                                        <td>$9,450</td>
+                                        <td><span class="status-badge in-stock">In Stock</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="product-color-box blue"></span> Basic Module</td>
+                                        <td>156</td>
+                                        <td>$4,680</td>
+                                        <td><span class="status-badge low-stock">Low Stock</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="product-color-box green"></span> Pro Bundle</td>
+                                        <td>98</td>
+                                        <td>$19,600</td>
+                                        <td><span class="status-badge in-stock">In Stock</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
