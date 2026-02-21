@@ -16,7 +16,7 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li class="active">
+                    <li>
                         <a href="#"><i class="fas fa-users"></i> Users</a>
                     </li>
                     <li>
@@ -28,7 +28,7 @@
                     <li>
                         <a href="#"><i class="fas fa-shopping-cart"></i> Test-Purchases</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#"><i class="fas fa-cog"></i> Settings</a>
                     </li>
                 </ul>
@@ -39,7 +39,7 @@
             <header class="navbar">
                 <div class="navbar-left">
                     <i class="fas fa-bars toggle-sidebar"></i>
-                    <div class="breadcrumb">Users</div>
+                    <div class="breadcrumb">Settings</div>
                 </div>
                 <div class="navbar-right">
                     <span class="admin-name">Admin</span>
@@ -50,168 +50,32 @@
             <div class="content-area">
                 <div class="card">
                     <div class="card-header">
-                        <h2>User List</h2>
+                        <h2>Settings</h2>
                     </div>
                     <div class="card-body">
-                        <div class="table-controls">
-                            <div class="search-section">
-                                <input type="text" placeholder="Search...">
-                                <button><i class="fas fa-search"></i> Search</button>
-                            </div>
-                            <div class="date-range-section">
-                                <input type="date" placeholder="Start Date">
-                                <span>To</span>
-                                <input type="date" placeholder="End Date">
-                            </div>
-                            <button class="add-user-btn"><i class="fas fa-plus"></i> Add New User</button>
+                        <div class="settings-tabs">
+                            <button class="tab-btn active"><i class="fas fa-user"></i> Profile</button>
+                            <button class="tab-btn"><i class="fas fa-lock"></i> Password</button>
                         </div>
 
-                        <div class="table-responsive">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Number of Paid Tests</th>
-                                        <th>Created Date</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Khant Si Thu</td>
-                                        <td>khantsithu@gmail.com</td>
-                                        <td>1</td>
-                                        <td>21 Feb 2026, 07:20 AM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Min Htet Myat</td>
-                                        <td>minhtetmyat@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 11:56 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td>3</td>
-                                        <td>Aung</td>
-                                        <td>aungthureinlat2@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 10:34 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Eaint Myat Kyaw</td>
-                                        <td>emk1212ok@gmail.com</td>
-                                        <td>1</td>
-                                        <td>20 Feb 2026, 06:58 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td>5</td>
-                                        <td>Kok</td>
-                                        <td>englishexam999@gmail.com</td>
-                                        <td>1</td>
-                                        <td>20 Feb 2026, 04:35 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td>6</td>
-                                        <td>Khine Zin Thet</td>
-                                        <td>mnozelia136@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 04:11 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>May Than Zin Aung</td>
-                                        <td>maythanzinaung2008@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 02:35 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td>8</td>
-                                        <td>Hsu Lei Yee</td>
-                                        <td>hsuleiyeeyawswar@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 01:56 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>Yoon Ei May Khin</td>
-                                        <td>yoonieiyooniei@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 01:50 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td>10</td>
-                                        <td>Su May Aung</td>
-                                        <td>sumayaung@gmail.com</td>
-                                        <td>0</td>
-                                        <td>20 Feb 2026, 01:37 PM</td>
-                                        <td>
-                                            <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
-                                            <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
-                                            <button class="action-btn delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="tab-content active">
+                            <h3>Profile Information</h3>
+                            <p>Update your account's profile information and email address.</p>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" value="Admin">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="pannyaacademy@gmail.com">
+                            </div>
+                            <div class="form-actions">
+                                <button class="save-changes-btn"><i class="fas fa-save"></i> Save Changes</button>
+                            </div>
                         </div>
 
-                        <div class="pagination">
-                            <span>Page 1 of 7</span>
-                            <a href="#">&lt; Previous</a>
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">Next &gt;</a>
+                        <div class="tab-content">
+                            <!-- Password change form would go here -->
                         </div>
                     </div>
                 </div>
